@@ -11,4 +11,10 @@ plot1<-function(){
   
   ##Plot the x label, title and red color histogram for Global_Active_Power
   hist(x,col="red", main="Global Active Power",xlab="Global Active Power(kilowatts)")
+  
+  ##Copy the plot generated on the screen device to plot1.png
+  dev.copy(png,"./ExData_Plotting1/plot1.png",width=480, height=480)
+  
+  ##close the device.
+  dev.off()
 }
