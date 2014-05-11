@@ -13,6 +13,9 @@ plot4<-function(){
   
   Global_reactive_power<-as.numeric(data$Global_reactive_power)
   
+  #Start png device
+  png("./ExData_Plotting1/plot4.png",width=480, height=480)
+ 
   par(mfrow=c(2,2))
   
   ##Plot the 4 graphs
@@ -28,10 +31,6 @@ plot4<-function(){
   plot(wDays,Global_reactive_power,type="l",xlab="datetime",ylab="Global_Reactive_Power")
   }
   )
-  
-  ##Copy the plot generated on the screen device to plot1.png
-  dev.copy(png,"./ExData_Plotting1/plot4.png",width=480, height=480)
-  
   ##close the device.
   dev.off()
 }
