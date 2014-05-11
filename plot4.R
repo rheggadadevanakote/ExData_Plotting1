@@ -16,7 +16,7 @@ plot4<-function(){
   #Start png device
   png("./ExData_Plotting1/plot4.png",width=480, height=480)
  
-  par(mfrow=c(2,2))
+  par(mfrow=c(2,2),cex=0.65)
   
   ##Plot the 4 graphs
   
